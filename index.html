@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signup Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+        form{background-color: rgb(78, 48, 212);padding: 20px;width: 500px;min-width: 300px;border-radius: 10px;}
+        .inputs div{padding: 6px;}
+        .inputs div label{color: white;font-size: 22px;font-family: monospace;}
+        .inputs input{width: 100%;height: 30px;padding: 0 10px;}
+        .btn{width: 100%;display: flex;justify-content: center;margin: 20px 10px 0;}
+        .btn button{padding: 5px 10px;border: none;transition: all 0.1s ease;}
+        .btn button:hover{background-color: rgb(216, 23, 49);color: white;cursor: pointer;}
+        .terms{width: 100%;display: flex;align-items: baseline;}
+        .terms p{margin-top: 10px;padding: 0 15px;color: white;}
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1><center>Signup form</center></h1>
+        <div class="container">
+            <form action="#">
+                <div class="inputs">
+                    <div>
+                        <label for="username">Username</label><br>
+                        <input type="text" name="username" placeholder="username" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password" placeholder="password" required>
+                    </div>
+                    <div>
+                        <label for="username">E-mail</label><br>
+                        <input type="email" name="email" placeholder="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label><br>
+                        <input type="text" name="phone" placeholder="phone">
+                    </div>
+                    <div>
+                        <label for="phone">DOB</label><br>
+                        <input type="date" name="dob" placeholder="DOB">
+                    </div>
+                </div>
+                <div class="terms">
+                    <p>I agree to the TOS, a required checbox input field</p><input type="checkbox">
+                </div>
+                <div class="btn"><button>Signup</button></div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
